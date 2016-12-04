@@ -18,6 +18,7 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
     $(VENDORDIR)/bin/adsprpcd:system/bin/adsprpcd \
     $(VENDORDIR)/bin/audiod:system/bin/audiod \
+    $(VENDORDIR)/bin/batt_health:system/bin/batt_health \
     $(VENDORDIR)/bin/btnvtool:system/bin/btnvtool \
     $(VENDORDIR)/bin/charge_only_mode:system/bin/charge_only_mode \
     $(VENDORDIR)/bin/cnd:system/bin/cnd \
