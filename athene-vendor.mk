@@ -178,6 +178,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/framework/tcmiface.jar:system/framework/tcmiface.jar \
     vendor/motorola/athene/proprietary/lib/hw/camera.msm8952.so:system/lib/hw/camera.msm8952.so \
     vendor/motorola/athene/proprietary/lib/hw/fingerprint.msm8952.so:system/lib/hw/fingerprint.msm8952.so \
+    vendor/motorola/athene/proprietary/lib/hw/gps.msm8952.so:system/lib/hw/gps.msm8952.so \
     vendor/motorola/athene/proprietary/lib/hw/sensorhub.msm8952.so:system/lib/hw/sensorhub.msm8952.so \
     vendor/motorola/athene/proprietary/lib/hw/sensors.msm8952.so:system/lib/hw/sensors.msm8952.so \
     vendor/motorola/athene/proprietary/lib/libGLESv3.so:system/lib/libGLESv3.so \
@@ -199,11 +200,14 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/lib/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
     vendor/motorola/athene/proprietary/lib/libdtvhal.so:system/lib/libdtvhal.so \
     vendor/motorola/athene/proprietary/lib/libdtvtuner.so:system/lib/libdtvtuner.so \
+    vendor/motorola/athene/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/motorola/athene/proprietary/lib/libipanat.so:system/lib/libipanat.so \
     vendor/motorola/athene/proprietary/lib/libjscore.so:system/lib/libjscore.so \
     vendor/motorola/athene/proprietary/lib/libjustshoot.so:system/lib/libjustshoot.so \
     vendor/motorola/athene/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+    vendor/motorola/athene/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/motorola/athene/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
+    vendor/motorola/athene/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/motorola/athene/proprietary/lib/libmbs.so:system/lib/libmbs.so \
     vendor/motorola/athene/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
     vendor/motorola/athene/proprietary/lib/libminui.so:system/lib/libminui.so \
