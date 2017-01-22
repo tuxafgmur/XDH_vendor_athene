@@ -13,6 +13,7 @@
 # limitations under the License.
 
 PRODUCT_COPY_FILES += \
+    vendor/motorola/athene/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
     vendor/motorola/athene/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/motorola/athene/proprietary/bin/audiod:system/bin/audiod \
     vendor/motorola/athene/proprietary/bin/batt_health:system/bin/batt_health \
@@ -147,11 +148,21 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt \
     vendor/motorola/athene/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
     vendor/motorola/athene/proprietary/etc/motorola/ecc_db/qcril_mot_ecc_common.db:system/etc/motorola/ecc_db/qcril_mot_ecc_common.db \
+    vendor/motorola/athene/proprietary/etc/permissions/com.motorola.android.settings.shared.xml:system/etc/permissions/com.motorola.android.settings.shared.xml \
+    vendor/motorola/athene/proprietary/etc/permissions/com.motorola.camerabgproc_library.xml:system/etc/permissions/com.motorola.camerabgproc_library.xml \
     vendor/motorola/athene/proprietary/etc/permissions/com.motorola.frameworks.core.addon.xml:system/etc/permissions/com.motorola.frameworks.core.addon.xml \
+    vendor/motorola/athene/proprietary/etc/permissions/com.motorola.frameworks.core.addon.xml:system/etc/permissions/com.motorola.frameworks.core.addon.xml \
+    vendor/motorola/athene/proprietary/etc/permissions/com.motorola.hw.sensorhub.xml:system/etc/permissions/com.motorola.hw.sensorhub.xml \
+    vendor/motorola/athene/proprietary/etc/permissions/com.motorola.imager.access.xml:system/etc/permissions/com.motorola.imager.access.xml \
+    vendor/motorola/athene/proprietary/etc/permissions/com.motorola.imager.athene.xml:system/etc/permissions/com.motorola.imager.athene.xml \
+    vendor/motorola/athene/proprietary/etc/permissions/com.motorola.motosignature.xml:system/etc/permissions/com.motorola.motosignature.xml \
     vendor/motorola/athene/proprietary/etc/permissions/com.motorola.msimsettings.xml:system/etc/permissions/com.motorola.msimsettings.xml \
+    vendor/motorola/athene/proprietary/etc/permissions/com.motorola.slpc.xml:system/etc/permissions/com.motorola.slpc.xml \
+    vendor/motorola/athene/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/motorola/athene/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/motorola/athene/proprietary/etc/permissions/com.qualcomm.location.vzw_library.xml:system/etc/permissions/com.qualcomm.location.vzw_library.xml \
     vendor/motorola/athene/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
+    vendor/motorola/athene/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/motorola/athene/proprietary/etc/permissions/ims.xml:system/etc/permissions/ims.xml \
     vendor/motorola/athene/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
     vendor/motorola/athene/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
@@ -161,6 +172,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/motorola/athene/proprietary/framework/QPerformance.jar:system/framework/QPerformance.jar \
     vendor/motorola/athene/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
+    vendor/motorola/athene/proprietary/framework/com.motorola.android.dropboxhelper.jar:system/framework/com.motorola.android.dropboxhelper.jar \
+    vendor/motorola/athene/proprietary/framework/com.motorola.android.settings.shared.jar:system/framework/com.motorola.android.settings.shared.jar \
+    vendor/motorola/athene/proprietary/framework/com.motorola.camerabgproc.jar:system/framework/com.motorola.camerabgproc.jar \
+    vendor/motorola/athene/proprietary/framework/com.motorola.frameworks.core.addon.jar:system/framework/com.motorola.frameworks.core.addon.jar \
+    vendor/motorola/athene/proprietary/framework/com.motorola.imager.athene.jar:system/framework/com.motorola.imager.athene.jar \
     vendor/motorola/athene/proprietary/framework/com.motorola.motosignature.jar:system/framework/com.motorola.motosignature.jar \
     vendor/motorola/athene/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/motorola/athene/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
@@ -178,7 +194,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/framework/tcmiface.jar:system/framework/tcmiface.jar \
     vendor/motorola/athene/proprietary/lib/hw/camera.msm8952.so:system/lib/hw/camera.msm8952.so \
     vendor/motorola/athene/proprietary/lib/hw/fingerprint.msm8952.so:system/lib/hw/fingerprint.msm8952.so \
-    vendor/motorola/athene/proprietary/lib/hw/gps.msm8952.so:system/lib/hw/gps.msm8952.so \
     vendor/motorola/athene/proprietary/lib/hw/sensorhub.msm8952.so:system/lib/hw/sensorhub.msm8952.so \
     vendor/motorola/athene/proprietary/lib/hw/sensors.msm8952.so:system/lib/hw/sensors.msm8952.so \
     vendor/motorola/athene/proprietary/lib/libGLESv3.so:system/lib/libGLESv3.so \
@@ -200,14 +215,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/lib/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
     vendor/motorola/athene/proprietary/lib/libdtvhal.so:system/lib/libdtvhal.so \
     vendor/motorola/athene/proprietary/lib/libdtvtuner.so:system/lib/libdtvtuner.so \
-    vendor/motorola/athene/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/motorola/athene/proprietary/lib/libipanat.so:system/lib/libipanat.so \
     vendor/motorola/athene/proprietary/lib/libjscore.so:system/lib/libjscore.so \
     vendor/motorola/athene/proprietary/lib/libjustshoot.so:system/lib/libjustshoot.so \
     vendor/motorola/athene/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/motorola/athene/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/motorola/athene/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-    vendor/motorola/athene/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/motorola/athene/proprietary/lib/libmbs.so:system/lib/libmbs.so \
     vendor/motorola/athene/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
     vendor/motorola/athene/proprietary/lib/libminui.so:system/lib/libminui.so \
@@ -242,6 +254,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/lib/libtinyxml.so:system/lib/libtinyxml.so \
     vendor/motorola/athene/proprietary/lib/libtpa.so:system/lib/libtpa.so \
     vendor/motorola/athene/proprietary/lib/libtpa_core.so:system/lib/libtpa_core.so \
+    vendor/motorola/athene/proprietary/lib/libuiblur.so:system/lib/libuiblur.so \
     vendor/motorola/athene/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
     vendor/motorola/athene/proprietary/lib/libwbxmlparser.so:system/lib/libwbxmlparser.so \
     vendor/motorola/athene/proprietary/lib/libwifi-hal-qcom.so:system/lib/libwifi-hal-qcom.so \
@@ -1020,8 +1033,25 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/vendor/qcril.db:system/vendor/qcril.db
 
 PRODUCT_PACKAGES += \
+    AttPhoneExt \
     CNEService \
+    CarrierServices \
+    CarrierSettingsExt \
+    ColorProfiles\
+    ConnMO \
+    CoreSettingsExt \
+    DCMO \
+    DMConfigUpdateLight \
+    DMService \
+    DiagMon \
+    HiddenMenuLight \
+    ImagerTuning \
+    MotoSignatureApp \
+    SlpcService \
+    SlpcSystem \
+    SprintDM \
     TimeService \
+    atfwd \
     colorservice \
     ims \
     imscmlibrary \
