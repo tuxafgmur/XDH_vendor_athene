@@ -1030,6 +1030,7 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/vendor/lib/libscve_mv.so:system/vendor/lib/libscve_mv.so \
     $(VENDORDIR)/vendor/lib/libscve_stub.so:system/vendor/lib/libscve_stub.so \
     $(VENDORDIR)/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so \
+    $(VENDORDIR)/vendor/lib/libprotobuf-cpp-shit.so:system/vendor/lib/libprotobuf-cpp-shit.so \
     $(VENDORDIR)/vendor/lib/libsecureui_svcsock.so:system/vendor/lib/libsecureui_svcsock.so \
     $(VENDORDIR)/vendor/lib/libseemore.so:system/vendor/lib/libseemore.so \
     $(VENDORDIR)/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
