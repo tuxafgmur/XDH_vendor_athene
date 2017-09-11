@@ -270,6 +270,7 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/lib/libqcomfm_jni.so:system/lib/libqcomfm_jni.so \
     $(VENDORDIR)/lib/libqmimotext.so:system/lib/libqmimotext.so \
     $(VENDORDIR)/lib/libqomx_core.so:system/lib/libqomx_core.so \
+    $(VENDORDIR)/lib/libqsap_sdk.so:system/lib/libqsap_sdk.so \
     $(VENDORDIR)/lib/libqti_performance.so:system/lib/libqti_performance.so \
     $(VENDORDIR)/lib/librilqmiservices.so:system/lib/librilqmiservices.so \
     $(VENDORDIR)/lib/libsensorhub.so:system/lib/libsensorhub.so \
