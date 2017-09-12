@@ -1070,7 +1070,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     atfwd \
     CarrierServices \
-    CNEService \
     ConnMO \
     DCMO \
     DiagMon \
