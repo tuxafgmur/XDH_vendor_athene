@@ -279,6 +279,7 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/lib/libtinyxml.so:system/lib/libtinyxml.so \
     $(VENDORDIR)/lib/libtpa.so:system/lib/libtpa.so \
     $(VENDORDIR)/lib/libtpa_core.so:system/lib/libtpa_core.so \
+    $(VENDORDIR)/lib/librmnetctl.so:system/lib/librmnetctl.so \
     $(VENDORDIR)/lib/libuiblur.so:system/lib/libuiblur.so \
     $(VENDORDIR)/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
     $(VENDORDIR)/lib/libwbxmlparser.so:system/lib/libwbxmlparser.so \
