@@ -48,7 +48,6 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/bin/qmuxd:system/bin/qmuxd \
     $(VENDORDIR)/bin/qseecomd:system/bin/qseecomd \
     $(VENDORDIR)/bin/radish:system/bin/radish \
-    $(VENDORDIR)/bin/rild:system/bin/rild \
     $(VENDORDIR)/bin/rmt_storage:system/bin/rmt_storage \
     $(VENDORDIR)/bin/sensors.qcom:system/bin/sensors.qcom \
     $(VENDORDIR)/bin/tcmd:system/bin/tcmd \
@@ -1092,7 +1091,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     imscmlibrary \
-    libril \
     libtime_genoff \
     qcnvitems \
     qcrilhook
