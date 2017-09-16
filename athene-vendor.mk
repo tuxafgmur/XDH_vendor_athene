@@ -203,7 +203,7 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/framework/tcmiface.jar:system/framework/tcmiface.jar
 
 PRODUCT_COPY_FILES += \
-    $(VENDORDIR)/lib/hw/camera.msm8952.so:system/lib/hw/camera.vendor.msm8952.so \
+    $(VENDORDIR)/lib/hw/camera.msm8952.so:system/lib/hw/camera.msm8952.so \
     $(VENDORDIR)/lib/hw/fingerprint.vendor.msm8952.so:system/lib/hw/fingerprint.vendor.msm8952.so \
     $(VENDORDIR)/lib/hw/sensorhub.msm8952.so:system/lib/hw/sensorhub.msm8952.so \
     $(VENDORDIR)/lib/hw/sensors.msm8952.so:system/lib/hw/sensors.msm8952.so
