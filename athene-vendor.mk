@@ -245,6 +245,7 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/lib/libjustshoot.so:system/lib/libjustshoot.so \
     $(VENDORDIR)/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     $(VENDORDIR)/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
+    $(VENDORDIR)/lib/libbson.so:system/lib/libbson.so \
     $(VENDORDIR)/lib/libmbs.so:system/lib/libmbs.so \
     $(VENDORDIR)/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
     $(VENDORDIR)/lib/libminui.so:system/lib/libminui.so \
