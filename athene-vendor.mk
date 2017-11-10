@@ -1042,7 +1042,9 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     $(VENDORDIR)/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     $(VENDORDIR)/vendor/lib/libstlport_sta.so:system/vendor/lib/libstlport_sta.so \
+    $(VENDORDIR)/vendor/lib/libsu.so:system/vendor/lib/libsu.so \
     $(VENDORDIR)/vendor/lib/libsubsystem_control.so:system/vendor/lib/libsubsystem_control.so \
+    $(VENDORDIR)/vendor/lib/libsui.so:system/vendor/lib/libsui.so \
     $(VENDORDIR)/vendor/lib/libsurround_3mic_proc.so:system/vendor/lib/libsurround_3mic_proc.so \
     $(VENDORDIR)/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     $(VENDORDIR)/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
