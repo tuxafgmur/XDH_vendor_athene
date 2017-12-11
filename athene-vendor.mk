@@ -312,6 +312,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(VENDORDIR)/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
+    $(VENDORDIR)/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
     $(VENDORDIR)/vendor/lib/hw/gatekeeper.msm8952.so:system/vendor/lib/hw/gatekeeper.msm8952.so \
     $(VENDORDIR)/vendor/lib/hw/keystore.msm8952.so:system/vendor/lib/hw/keystore.msm8952.so
 
@@ -1066,7 +1067,8 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     $(VENDORDIR)/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     $(VENDORDIR)/vendor/lib/sensor_calibrate.so:system/vendor/lib/sensor_calibrate.so \
-    $(VENDORDIR)/vendor/lib/sensors.ssc.so:system/vendor/lib/sensors.ssc.so
+    $(VENDORDIR)/vendor/lib/sensors.ssc.so:system/vendor/lib/sensors.ssc.so \
+    $(VENDORDIR)/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so
 
 PRODUCT_COPY_FILES += \
     $(VENDORDIR)/vendor/qcril.db:system/vendor/qcril.db
@@ -1096,6 +1098,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     imscmlibrary \
+    vendor.qti.hardware.fm@1.0 \
     libtime_genoff \
     qcnvitems \
     qcrilhook

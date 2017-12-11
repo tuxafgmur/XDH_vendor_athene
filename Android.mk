@@ -204,6 +204,16 @@ LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := vendor.qti.hardware.fm@1.0
+LOCAL_MODULE_OWNER := motorola
+LOCAL_SRC_FILES := proprietary/lib/vendor.qti.hardware.fm@1.0.so
+LOCAL_MULTILIB := 32
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/vendor/lib/libtime_genoff.so
