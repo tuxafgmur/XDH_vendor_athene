@@ -197,6 +197,7 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     $(VENDORDIR)/framework/qcom.fmradio.jar:system/framework/qcom.fmradio.jar \
     $(VENDORDIR)/framework/qmapbridge.jar:system/framework/qmapbridge.jar \
+    $(VENDORDIR)/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     $(VENDORDIR)/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar \
     $(VENDORDIR)/framework/rcsservice.jar:system/framework/rcsservice.jar \
     $(VENDORDIR)/framework/tcmclient.jar:system/framework/tcmclient.jar \
