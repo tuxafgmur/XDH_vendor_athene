@@ -1067,7 +1067,6 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/vendor/qcril.db:system/vendor/qcril.db
 
 PRODUCT_PACKAGES += \
-    DMConfigUpdateLight \
     TimeService
 
 PRODUCT_PACKAGES += \
