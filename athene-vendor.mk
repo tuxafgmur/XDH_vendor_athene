@@ -1077,6 +1077,7 @@ PRODUCT_PACKAGES += \
     ConnMO \
     DCMO \
     DiagMon \
+    DMService \
     qcrilmsgtunnel
 
 PRODUCT_PACKAGES += \
