@@ -272,6 +272,10 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/lib/libqmimotext.so:system/lib/libqmimotext.so \
     $(VENDORDIR)/lib/libqomx_core.so:system/lib/libqomx_core.so \
     $(VENDORDIR)/lib/libqsap_sdk.so:system/lib/libqsap_sdk.so \
+    $(VENDORDIR)/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
+    $(VENDORDIR)/lib/vendor.display.config@1.0.so:system/lib/vendor.display.config@1.0.so \
+    $(VENDORDIR)/lib/vendor.display.config@1.1.so:system/lib/vendor.display.config@1.1.so \
+    $(VENDORDIR)/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
     $(VENDORDIR)/lib/libqti_performance.so:system/lib/libqti_performance.so \
     $(VENDORDIR)/lib/librilqmiservices.so:system/lib/librilqmiservices.so \
     $(VENDORDIR)/lib/libsensorhub.so:system/lib/libsensorhub.so \
@@ -1068,6 +1072,9 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     $(VENDORDIR)/vendor/lib/sensor_calibrate.so:system/vendor/lib/sensor_calibrate.so \
     $(VENDORDIR)/vendor/lib/sensors.ssc.so:system/vendor/lib/sensors.ssc.so \
+    $(VENDORDIR)/vendor/lib/vendor.display.color@1.0_vendor.so:system/vendor/lib/vendor.display.color@1.0_vendor.so \
+    $(VENDORDIR)/vendor/lib/vendor.display.config@1.0_vendor.so:system/vendor/lib/vendor.display.config@1.0_vendor.so \
+    $(VENDORDIR)/vendor/lib/vendor.display.postproc@1.0_vendor.so:system/vendor/lib/vendor.display.postproc@1.0_vendor.so \
     $(VENDORDIR)/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so
 
 PRODUCT_COPY_FILES += \
