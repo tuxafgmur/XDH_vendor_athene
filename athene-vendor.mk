@@ -394,7 +394,6 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/vendor/lib/libStDrvInt.so:system/vendor/lib/libStDrvInt.so \
     $(VENDORDIR)/vendor/lib/libSubSystemShutdown.so:system/vendor/lib/libSubSystemShutdown.so \
     $(VENDORDIR)/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
-    $(VENDORDIR)/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     $(VENDORDIR)/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     $(VENDORDIR)/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     $(VENDORDIR)/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
@@ -832,6 +831,7 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     $(VENDORDIR)/vendor/lib/libdme_main.so:system/vendor/lib/libdme_main.so \
     $(VENDORDIR)/vendor/lib/libdrc.so:system/vendor/lib/libdrc.so \
+    $(VENDORDIR)/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     $(VENDORDIR)/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
     $(VENDORDIR)/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     $(VENDORDIR)/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
@@ -1066,7 +1066,6 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/vendor/lib/libwfdcommonutils.so:system/vendor/lib/libwfdcommonutils.so \
     $(VENDORDIR)/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
     $(VENDORDIR)/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
-    $(VENDORDIR)/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     $(VENDORDIR)/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     $(VENDORDIR)/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
     $(VENDORDIR)/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
