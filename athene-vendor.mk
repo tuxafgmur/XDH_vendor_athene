@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/bin/adsprpcd:system/bin/adsprpcd \
     $(VENDORDIR)/bin/audiod:system/bin/audiod \
     $(VENDORDIR)/bin/batt_health:system/bin/batt_health \
-    $(VENDORDIR)/bin/btnvtool:system/bin/btnvtool \
     $(VENDORDIR)/bin/charge_only_mode:system/bin/charge_only_mode \
     $(VENDORDIR)/bin/cnd:system/bin/cnd \
     $(VENDORDIR)/bin/cnss-daemon:system/bin/cnss-daemon \
@@ -30,7 +29,6 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/bin/ftmipcd:system/bin/ftmipcd \
     $(VENDORDIR)/bin/gpsone_daemon:system/bin/gpsone_daemon \
     $(VENDORDIR)/bin/hal_proxy_daemon:system/bin/hal_proxy_daemon \
-    $(VENDORDIR)/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     $(VENDORDIR)/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
     $(VENDORDIR)/bin/imscmservice:system/bin/imscmservice \
     $(VENDORDIR)/bin/imsdatadaemon:system/bin/imsdatadaemon \
@@ -316,6 +314,7 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/vendor/lib/egl/libq3dtools_esx.so:system/vendor/lib/egl/libq3dtools_esx.so
 
 PRODUCT_COPY_FILES += \
+    $(VENDORDIR)/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:system/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     $(VENDORDIR)/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     $(VENDORDIR)/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
     $(VENDORDIR)/vendor/lib/hw/gatekeeper.msm8952.so:system/vendor/lib/hw/gatekeeper.msm8952.so \
@@ -338,6 +337,7 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/vendor/lib/rfsa/adsp/libscveTextReco_skel.so:system/vendor/lib/rfsa/adsp/libscveTextReco_skel.so
 
 PRODUCT_COPY_FILES += \
+    $(VENDORDIR)/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
     $(VENDORDIR)/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so \
     $(VENDORDIR)/vendor/lib/lib-ims-rcscmjni.so:system/vendor/lib/lib-ims-rcscmjni.so \
     $(VENDORDIR)/vendor/lib/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so \
@@ -416,8 +416,8 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/vendor/lib/libadsp_default_listener.so:system/vendor/lib/libadsp_default_listener.so \
     $(VENDORDIR)/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     $(VENDORDIR)/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
-    $(VENDORDIR)/vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so:system/vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so \
-    $(VENDORDIR)/vendor/lib/libaptXScheduler.so:system/vendor/lib/libaptXScheduler.so \
+    $(VENDORDIR)/vendor/lib/libaptXHD_encoder.so:system/vendor/lib/libaptXHD_encoder.so \
+    $(VENDORDIR)/vendor/lib/libaptX_encoder.so:system/vendor/lib/libaptX_encoder.so \
     $(VENDORDIR)/vendor/lib/libasn1cper.so:system/vendor/lib/libasn1cper.so \
     $(VENDORDIR)/vendor/lib/libasn1crt.so:system/vendor/lib/libasn1crt.so \
     $(VENDORDIR)/vendor/lib/libasn1crtx.so:system/vendor/lib/libasn1crtx.so \
