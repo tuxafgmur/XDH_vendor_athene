@@ -64,6 +64,8 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/etc/acdbdata/Speaker_cal.acdb:system/etc/acdbdata/Speaker_cal.acdb
 
 PRODUCT_COPY_FILES += \
+    $(VENDORDIR)/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
+    $(VENDORDIR)/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     $(VENDORDIR)/etc/cne/wqeclient/ATT/ATT_profile1.xml:system/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     $(VENDORDIR)/etc/cne/wqeclient/ATT/ATT_profile2.xml:system/etc/cne/wqeclient/ATT/ATT_profile2.xml \
     $(VENDORDIR)/etc/cne/wqeclient/ATT/ATT_profile3.xml:system/etc/cne/wqeclient/ATT/ATT_profile3.xml \
@@ -77,9 +79,7 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/etc/cne/wqeclient/VZW/VZW_profile3.xml:system/etc/cne/wqeclient/VZW/VZW_profile3.xml \
     $(VENDORDIR)/etc/cne/wqeclient/VZW/VZW_profile4.xml:system/etc/cne/wqeclient/VZW/VZW_profile4.xml \
     $(VENDORDIR)/etc/cne/wqeclient/VZW/VZW_profile5.xml:system/etc/cne/wqeclient/VZW/VZW_profile5.xml \
-    $(VENDORDIR)/etc/cne/wqeclient/VZW/VZW_profile6.xml:system/etc/cne/wqeclient/VZW/VZW_profile6.xml \
-    $(VENDORDIR)/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
-    $(VENDORDIR)/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml
+    $(VENDORDIR)/etc/cne/wqeclient/VZW/VZW_profile6.xml:system/etc/cne/wqeclient/VZW/VZW_profile6.xml
 
 PRODUCT_COPY_FILES += \
     $(VENDORDIR)/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
@@ -228,6 +228,7 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/lib/libadropbox.so:system/lib/libadropbox.so \
     $(VENDORDIR)/lib/libadvalgcore.so:system/lib/libadvalgcore.so \
     $(VENDORDIR)/lib/libbabysit.so:system/lib/libbabysit.so \
+    $(VENDORDIR)/lib/libbson.so:system/lib/libbson.so \
     $(VENDORDIR)/lib/libbt-aptX-ARM-4.2.2.so:system/lib/libbt-aptX-ARM-4.2.2.so \
     $(VENDORDIR)/lib/libcamerabgproc-jni.so:system/lib/libcamerabgproc-jni.so \
     $(VENDORDIR)/lib/libcamerabgprocservice.so:system/lib/libcamerabgprocservice.so \
@@ -244,7 +245,6 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/lib/libjustshoot.so:system/lib/libjustshoot.so \
     $(VENDORDIR)/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     $(VENDORDIR)/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-    $(VENDORDIR)/lib/libbson.so:system/lib/libbson.so \
     $(VENDORDIR)/lib/libmbs.so:system/lib/libmbs.so \
     $(VENDORDIR)/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
     $(VENDORDIR)/lib/libminui.so:system/lib/libminui.so \
@@ -271,12 +271,9 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/lib/libqmimotext.so:system/lib/libqmimotext.so \
     $(VENDORDIR)/lib/libqomx_core.so:system/lib/libqomx_core.so \
     $(VENDORDIR)/lib/libqsap_sdk.so:system/lib/libqsap_sdk.so \
-    $(VENDORDIR)/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
-    $(VENDORDIR)/lib/vendor.display.config@1.0.so:system/lib/vendor.display.config@1.0.so \
-    $(VENDORDIR)/lib/vendor.display.config@1.1.so:system/lib/vendor.display.config@1.1.so \
-    $(VENDORDIR)/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
     $(VENDORDIR)/lib/libqti_performance.so:system/lib/libqti_performance.so \
     $(VENDORDIR)/lib/librilqmiservices.so:system/lib/librilqmiservices.so \
+    $(VENDORDIR)/lib/librmnetctl.so:system/lib/librmnetctl.so \
     $(VENDORDIR)/lib/libsensorhub.so:system/lib/libsensorhub.so \
     $(VENDORDIR)/lib/libsensorhubservice_jni.so:system/lib/libsensorhubservice_jni.so \
     $(VENDORDIR)/lib/libslowmotionconverter.so:system/lib/libslowmotionconverter.so \
@@ -284,11 +281,14 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/lib/libtinyxml.so:system/lib/libtinyxml.so \
     $(VENDORDIR)/lib/libtpa.so:system/lib/libtpa.so \
     $(VENDORDIR)/lib/libtpa_core.so:system/lib/libtpa_core.so \
-    $(VENDORDIR)/lib/librmnetctl.so:system/lib/librmnetctl.so \
     $(VENDORDIR)/lib/libuiblur.so:system/lib/libuiblur.so \
     $(VENDORDIR)/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
     $(VENDORDIR)/lib/libwbxmlparser.so:system/lib/libwbxmlparser.so \
-    $(VENDORDIR)/lib/libwifi-hal-qcom.so:system/lib/libwifi-hal-qcom.so
+    $(VENDORDIR)/lib/libwifi-hal-qcom.so:system/lib/libwifi-hal-qcom.so \
+    $(VENDORDIR)/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
+    $(VENDORDIR)/lib/vendor.display.config@1.0.so:system/lib/vendor.display.config@1.0.so \
+    $(VENDORDIR)/lib/vendor.display.config@1.1.so:system/lib/vendor.display.config@1.1.so \
+    $(VENDORDIR)/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so
 
 PRODUCT_COPY_FILES += \
     $(VENDORDIR)/priv-app/MotoCamera/lib/arm/libjni_mot_mosaic.so:system/priv-app/MotoCamera/lib/arm/libjni_mot_mosaic.so \
@@ -316,9 +316,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(VENDORDIR)/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:system/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     $(VENDORDIR)/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
-    $(VENDORDIR)/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
     $(VENDORDIR)/vendor/lib/hw/gatekeeper.msm8952.so:system/vendor/lib/hw/gatekeeper.msm8952.so \
-    $(VENDORDIR)/vendor/lib/hw/keystore.msm8952.so:system/vendor/lib/hw/keystore.msm8952.so
+    $(VENDORDIR)/vendor/lib/hw/keystore.msm8952.so:system/vendor/lib/hw/keystore.msm8952.so \
+    $(VENDORDIR)/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
 
 PRODUCT_COPY_FILES += \
     $(VENDORDIR)/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
@@ -1002,6 +1002,7 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/vendor/lib/libois_lc898122.so:system/vendor/lib/libois_lc898122.so \
     $(VENDORDIR)/vendor/lib/liboptizoom.so:system/vendor/lib/liboptizoom.so \
     $(VENDORDIR)/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
+    $(VENDORDIR)/vendor/lib/libprotobuf-cpp-shit.so:system/vendor/lib/libprotobuf-cpp-shit.so \
     $(VENDORDIR)/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
     $(VENDORDIR)/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     $(VENDORDIR)/vendor/lib/libqcmaputils.so:system/vendor/lib/libqcmaputils.so \
@@ -1037,7 +1038,6 @@ PRODUCT_COPY_FILES += \
     $(VENDORDIR)/vendor/lib/libscve_mv.so:system/vendor/lib/libscve_mv.so \
     $(VENDORDIR)/vendor/lib/libscve_stub.so:system/vendor/lib/libscve_stub.so \
     $(VENDORDIR)/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so \
-    $(VENDORDIR)/vendor/lib/libprotobuf-cpp-shit.so:system/vendor/lib/libprotobuf-cpp-shit.so \
     $(VENDORDIR)/vendor/lib/libsecureui_svcsock.so:system/vendor/lib/libsecureui_svcsock.so \
     $(VENDORDIR)/vendor/lib/libseemore.so:system/vendor/lib/libseemore.so \
     $(VENDORDIR)/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
@@ -1091,12 +1091,10 @@ PRODUCT_PACKAGES += \
     DCMO \
     DiagMon \
     DMService \
-    qcrilmsgtunnel
-
-PRODUCT_PACKAGES += \
     MotoCamera \
     MotoCameraTunning \
- 
+    qcrilmsgtunnel
+
 PRODUCT_PACKAGES += \
     colorservice \
     ims \
@@ -1104,7 +1102,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     imscmlibrary \
-    vendor.qti.hardware.fm@1.0 \
-    libtime_genoff \
     qcnvitems \
     qcrilhook
+
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.fm@1.0 \
+    libtime_genoff
