@@ -1096,7 +1096,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     MotoCamera \
     MotoCameraTunning \
-    MotoFileBrowser
  
 PRODUCT_PACKAGES += \
     colorservice \
